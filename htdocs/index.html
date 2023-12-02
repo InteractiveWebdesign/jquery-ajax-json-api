@@ -4,35 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-    $(document).ready(function() {
-        $("#btn").click(function() {
-            $("#test").load("data.txt", {
-                Name: "Ruud", 
-                Lastname: "Weijters"
-            }, function() {
-                alert("The data is loaded!");
+        $(document).ready(function () {
+
+            $("#go").click(function () {
+                $("#block").animate({
+                    opacity: '0.5',
+                    marginLeft: '+=50px',
+                    width: '400px'
+                }, 3000, "linear", function () {
+                    // callback function is executed when the animation is complete
+                    $(this).after("<div id='animationMessage'>Animation complete. <button id='removeMessage'>Remove</button></div>");
+                });
+            });
+
+            // Add event delegation for dynamically added button
+            $(document).on("click", "#removeMessage", function () {
+                $("#animationMessage").remove();
+            });
+
+            $("#btn").click(function () {
+                // Show the loader
+                $(".loader-container").show();
+
+                // Simulate loading with a fake percentage
+                var fakePercentage = 0;
+                var fakeLoader = setInterval(function () {
+                    fakePercentage += 10;
+                    if (fakePercentage <= 100) {
+                        // Update the loader width based on the fake percentage
+                        $(".loader-bar").css("width", fakePercentage + "%");
+                    } else {
+                        // Stop the loader when it reaches 100%
+                        clearInterval(fakeLoader);
+                        // Hide the loader
+                        $(".loader-container").hide();
+                        // Load the content
+                        $("#test").load("data.txt", {
+                            Name: "Ruud",
+                            Lastname: "Weijters"
+                        }, function () {
+                            alert("The data is loaded!");
+                        });
+                    }
+                }, 500); // Adjust the interval and total time as needed
             });
         });
-    });
     </script>
-    
 </head>
 <body>
-    
-<div id="test">
-    <p>This is the first content!</p>
+    <div id="test">
+        <p>This is the first content!</p>
     </div>
     <button id="btn">Click me to load content</button>
 
-
-
-
-<p>I want to make a loader horizontal here</p>
-
-
-
-
+    <p>I want to make a loader horizontal here</p>
+    <div class="loader-container" style="display: none;">
+        <div class="loader-bar"></div>
+    </div>
+    
+    <div>
+        <button id="go">Run</button>
+        <div id="block">Hello</div>
+    </div>
 </body>
 </html>
