@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/search-names.js"></script>
+    <script src="js/ajax.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -74,7 +75,7 @@
     </script>
 </head>
 <body class="px-3 py-3">
-    <h1 class="mt-3 text-2xl text-center strong">Learn jQuery</h1>
+    <h1 class="font-bold mt-3 text-2xl text-center">Learn jQuery</h1>
     <div id="test">
         <p class="">This is the first content!</p>
     </div>
@@ -91,11 +92,19 @@
     </div>
 
     <!--- This is to load data and search through it-->
-    <div class="text-center mt-3">  
+    <div class="font-bold text-center mt-3">  
         <p>Search through a php file with name information</p>
         <input class="mt-3 rounded-xl" type="text" name="name">
         <p id="names"></p>
     </div>  
+
+    <!---  This is a sample API result -->
+    <div class="font-bold text-center mt-3">  
+        <p>Get API information and show only the title of the product</p>
+    </div>
+    <ul class="text-center" id="products"></ul>
+
+
 
 </body>
 </html>
