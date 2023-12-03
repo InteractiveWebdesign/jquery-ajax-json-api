@@ -8,14 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <!-- Include your other scripts before api.js if they are dependent on jQuery -->
     <script src="js/search-names.js"></script>
     <script src="js/ajax.js"></script>
     <script src="js/advancedproductsfullinfo.js"></script>
     <script src="js/change-title.js"></script>
     <script src="js/slider.js"></script>
-
-    <!-- Include your api.js script after all other scripts -->
     <script src="js/api.js"></script>
     
 
@@ -128,12 +125,12 @@
     <div class="text-2xl font-bold text-center mt-3">  
         <p>Search Advanced Product</p>
     </div>
-    <div class="max-w-4xl mx-auto mt-3">
+    <div class="pb-6 max-w-4xl mx-auto mt-3">
         
         <input type="text" id="search" class="mt-1 p-2 border rounded-md w-full">
         <table id="advancedproductsfullinfo" class="mx-3 mt-4 table-auto w-full bg-white border shadow-md rounded-md">
             <thead class="bg-gray-200">
-                <tr>
+                <tr class="">
                     <th class="px-4 py-2">Name</th>
                     <th class="px-4 py-2">Price</th>
                     <th class="px-4 py-2">Description</th>
@@ -146,8 +143,11 @@
     </div>
 
     <!---  This is a sample API  -->
-    <button id="getAllProductsBtn">Get All Products</button>
-    <button id="getProductByIdBtn">Get Product by ID</button>
+    <div class="text-2xl font-bold text-center mt-3">  
+        <p>Trying to set up my own basic API</p>
+    <button class="btn bg-blue-500 text-white rounded-xl" id="getAllProductsBtn">Get All Products</button>
+    <button class="btn bg-blue-500 text-white rounded-xl" id="getProductByIdBtn">Get Product by ID</button>
+    </div>
       
 
 
