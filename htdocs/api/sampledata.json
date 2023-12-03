@@ -2,23 +2,23 @@
     "products": [
       {
         "id": 1,
-        "name": "Product 1",
+        "name": "Gouden Picknickmand",
         "price": 19.99,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "image": "https://example.com/product1.jpg"
       },
       {
         "id": 2,
-        "name": "Product 2",
+        "name": "Stenen bijtel",
         "price": 24.99,
         "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
         "image": "https://example.com/product2.jpg"
       },
       {
         "id": 20,
-        "name": "Product 20",
+        "name": "Houten krukje",
         "price": 29.99,
-        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "description": "Ut 32enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "image": "https://example.com/product20.jpg"
       }
     ]
