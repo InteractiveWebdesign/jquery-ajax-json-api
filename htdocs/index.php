@@ -8,11 +8,15 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Include your other scripts before api.js if they are dependent on jQuery -->
     <script src="js/search-names.js"></script>
     <script src="js/ajax.js"></script>
     <script src="js/advancedproductsfullinfo.js"></script>
     <script src="js/change-title.js"></script>
     <script src="js/slider.js"></script>
+
+    <!-- Include your api.js script after all other scripts -->
+    <script src="js/api.js"></script>
     
 
     <script>
@@ -140,6 +144,10 @@
             </tbody>
         </table>
     </div>
+
+    <!---  This is a sample API  -->
+    <button id="getAllProductsBtn">Get All Products</button>
+    <button id="getProductByIdBtn">Get Product by ID</button>
       
 
 
