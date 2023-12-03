@@ -9,6 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/search-names.js"></script>
     <script src="js/ajax.js"></script>
+    <script src="js/advancedproductsfullinfo.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -55,19 +56,6 @@
                     }
                 }, 500); // Adjust the interval and total time as needed
             });
-
-            // // MOVED INTO OWN SCRIPT js/search-names.js 
-            // // This is to load data and search through it
-            // $("input").keyup(function () {
-            //     var name = $("input").val();
-            //     $.post("search-names.php", {
-            //         names: name
-            //     }, function (data, status) {
-            //         $("#names").html(data);
-            //     });
-            // });
-
-
         });
 
 
@@ -75,7 +63,7 @@
     </script>
 </head>
 <body class="px-3 py-3">
-    <h1 class="font-bold mt-3 text-2xl text-center">Learn jQuery</h1>
+    <h1 class="font-bold mt-3 text-5xl text-center">Learn jQuery</h1>
     <div id="test">
         <p class="">This is the first content!</p>
     </div>
@@ -93,7 +81,7 @@
 
     <!--- This is to load data and search through it-->
     <div class="text-2xl font-bold text-center mt-3">  
-        <p>Search through a php file with name information</p>
+        <p>Search through a php file with name information (js/search-names.js)</p>
         <input class="mt-3 rounded-xl" type="text" name="name">
         <p id="names"></p>
     </div>  
@@ -110,6 +98,27 @@
     </div>
     <div class="max-w-4xl mx-auto mt-10">
         <table id="productsfullinfo" class="mx-3 table-auto w-full bg-white border shadow-md rounded-md">
+            <thead class="bg-gray-200">
+                <tr>
+                    <th class="px-4 py-2">Name</th>
+                    <th class="px-4 py-2">Price</th>
+                    <th class="px-4 py-2">Description</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-300">
+                <!-- Data will be inserted here dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <!---  This is a sample API result but then in a table with more product information with a search funtion -->
+    <div class="text-2xl font-bold text-center mt-3">  
+        <p>Search Advanced Product</p>
+    </div>
+    <div class="max-w-4xl mx-auto mt-3">
+        
+        <input type="text" id="search" class="mt-1 p-2 border rounded-md w-full">
+        <table id="advancedproductsfullinfo" class="mx-3 mt-4 table-auto w-full bg-white border shadow-md rounded-md">
             <thead class="bg-gray-200">
                 <tr>
                     <th class="px-4 py-2">Name</th>

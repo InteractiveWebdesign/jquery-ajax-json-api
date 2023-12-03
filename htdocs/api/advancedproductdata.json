@@ -1,0 +1,125 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Gouden Picknickmand",
+        "price": 19.99,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "image": "https://example.com/product1.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Stenen bijtel",
+        "price": 24.99,
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+        "image": "https://example.com/product2.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Houten tafel",
+        "price": 29.99,
+        "description": "Ut 32enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "image": "https://example.com/product20.jpg"
+      },
+      {
+        "id": 4,
+        "name": "stenen vloer",
+        "price": 19.99,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "image": "https://example.com/product1.jpg"
+      },
+      {
+        "id": 5,
+        "name": "zilveren hamer",
+        "price": 24.99,
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+        "image": "https://example.com/product2.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Houten stoel",
+        "price": 29.99,
+        "description": "Ut 32enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "image": "https://example.com/product20.jpg"
+      },
+      {
+        "id": 7,
+        "name": "koperen fles",
+        "price": 19.99,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "image": "https://example.com/product1.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Blikopener",
+        "price": 24.99,
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+        "image": "https://example.com/product2.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Kratje bier",
+        "price": 29.99,
+        "description": "Ut 32enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "image": "https://example.com/product20.jpg"
+      },
+      {
+        "id": 10,
+        "name": "T shirt",
+        "price": 19.99,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "image": "https://example.com/product1.jpg"
+      },
+      {
+        "id": 11,
+        "name": "Schoenen",
+        "price": 24.99,
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+        "image": "https://example.com/product2.jpg"
+      },
+      {
+        "id": 12,
+        "name": "Broek",
+        "price": 29.99,
+        "description": "Ut 32enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "image": "https://example.com/product20.jpg"
+      },
+      {
+        "id": 13,
+        "name": "Gouden beker",
+        "price": 19.99,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "image": "https://example.com/product1.jpg"
+      },
+      {
+        "id": 14,
+        "name": "Stenen muur",
+        "price": 24.99,
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+        "image": "https://example.com/product2.jpg"
+      },
+      {
+        "id": 15,
+        "name": "Houten vloermat",
+        "price": 29.99,
+        "description": "Ut 32enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "image": "https://example.com/product20.jpg"
+      },
+      {
+        "id": 16,
+        "name": "stenen tafel",
+        "price": 19.99,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "image": "https://example.com/product1.jpg"
+      },
+      {
+        "id": 17,
+        "name": "Houten hamer",
+        "price": 4.99,
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+        "image": "https://example.com/product2.jpg"
+      }
+    ]
+
+  }
+  
