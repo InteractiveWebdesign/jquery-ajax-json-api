@@ -49,4 +49,3 @@ function populateTable(advancedProducts, tbody) {
         console.error("Invalid data format for populating the table.");
     }
 }
-
