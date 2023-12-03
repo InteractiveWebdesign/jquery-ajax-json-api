@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/search-names.js"></script>
+
     <script>
         $(document).ready(function () {
 
@@ -51,14 +54,31 @@
                     }
                 }, 500); // Adjust the interval and total time as needed
             });
+
+            // // MOVED INTO OWN SCRIPT js/search-names.js 
+            // // This is to load data and search through it
+            // $("input").keyup(function () {
+            //     var name = $("input").val();
+            //     $.post("search-names.php", {
+            //         names: name
+            //     }, function (data, status) {
+            //         $("#names").html(data);
+            //     });
+            // });
+
+
         });
+
+
+
     </script>
 </head>
-<body>
+<body class="px-3 py-3">
+    <h1 class="mt-3 text-2xl text-center strong">Learn jQuery</h1>
     <div id="test">
-        <p>This is the first content!</p>
+        <p class="">This is the first content!</p>
     </div>
-    <button id="btn">Click me to load content</button>
+    <button class="btn bg-blue-500 text-white rounded-xl" id="btn">Click me to load content</button>
 
     <p>I want to make a loader horizontal here</p>
     <div class="loader-container" style="display: none;">
@@ -66,8 +86,16 @@
     </div>
     
     <div>
-        <button id="go">Run</button>
+        <button class="btn bg-blue-500 text-white rounded-xl" id="go">Run</button>
         <div id="block">Hello</div>
     </div>
+
+    <!--- This is to load data and search through it-->
+    <div class="text-center mt-3">  
+        <p>Search through a php file with name information</p>
+        <input class="mt-3 rounded-xl" type="text" name="name">
+        <p id="names"></p>
+    </div>  
+
 </body>
 </html>
