@@ -1,5 +1,3 @@
-
-
 /* function that changes the h1 color to blue when the user clicks on it.
 
 $(function () {
@@ -11,13 +9,19 @@ $(function () {
 */
 
 
-// ANIMATED function that changes the h1 color to blue when the user clicks on it.
+// ANIMATED function that changes the h1 color to blue when the user clicks on it and back to black when the user clicks on it again.
 
 $(function () {
     $('h1').click(function () {
-        // Use the animate function to smoothly change the color to blue
+        // Check the current color
+        var currentColor = $(this).css('color');
+
+        // Define the target color based on the current color
+        var targetColor = (currentColor === 'rgb(0, 0, 255)') ? 'rgb(0, 0, 0)' : 'blue';
+
+        // Use the animate function to smoothly change the color
         $(this).animate({
-            color: 'blue'
-        }, 500); // 1000 milliseconds (1 second) for the animation duration
+            color: targetColor
+        }, 500); // 500 milliseconds for the animation duration
     });
 });
