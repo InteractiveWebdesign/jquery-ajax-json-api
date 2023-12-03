@@ -16,7 +16,8 @@
     
 
     <script>
-        $(document).ready(function () {
+        // use $(function () {  Don't use depreciated ->  $(document).ready(function () {
+        $(function () {    
 
             $("#go").click(function () {
                 $("#block").animate({
