@@ -12,6 +12,7 @@ $(function () {
 
 
 // ANIMATED function that changes the h1 color to blue when the user clicks on it.
+
 $(function () {
     $('h1').click(function () {
         // Use the animate function to smoothly change the color to blue
