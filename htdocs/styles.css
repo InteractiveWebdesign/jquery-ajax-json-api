@@ -36,3 +36,38 @@ button {
     padding: 0.5em;
     margin: 0.5em;
 }
+
+pre {
+    background-color: black;
+    padding: 10px;
+    
+    border-radius: 5px;
+    overflow: auto;
+}
+
+code {
+    font-family: 'Courier New', monospace;
+    color: white;
+}
+
+/* .code-slider {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.code-slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.code-snippet {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#prev,
+#next {
+    margin-top: 1rem;
+} */

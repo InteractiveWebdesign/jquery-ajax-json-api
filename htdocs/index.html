@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Learn jQuery</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -12,6 +12,8 @@
     <script src="js/ajax.js"></script>
     <script src="js/advancedproductsfullinfo.js"></script>
     <script src="js/change-title.js"></script>
+    <script src="js/slider.js"></script>
+    
 
     <script>
         $(document).ready(function () {
@@ -65,7 +67,149 @@
     </script>
 </head>
 <body class="px-3 py-3">
-    <h1 class="font-bold mt-3 text-5xl text-center">Learn jQuery</h1>
+    <h1 class="font-bold mt-3 text-5xl text-center mb-3">Learn jQuery</h1>
+
+
+    <!--- Slider with info about jQuery -->
+    <div class="flex justify-center items-center space-x-4 mt-4">
+        <button id="prev" class="bg-blue-500 text-white px-4 py-2 rounded-md">Previous</button>
+        <button id="next" class="bg-blue-500 text-white px-4 py-2 rounded-md">Next</button>
+    </div>
+
+    <div class="code-slider mt-4 w-full max-w-4xl mx-auto overflow-hidden">
+        <div class="code-slider-container flex transition-transform transform">
+            <div class="code-snippet w-full max-w-4xl box-content flex-none">
+                <pre>
+                    <code class="language-javascript">
+                        //  AJAX Basics Making a Simple AJAX Request:
+
+                        $.ajax({
+                            url: 'https://api.example.com/data',
+                            method: 'GET',
+                            success: function(data) {
+                                console.log('Data received:', data);
+                            },
+                            error: function(error) {
+                                console.error('Error:', error);
+                            }
+                        });
+                    </code>
+                </pre>
+            </div>
+
+            <div class="code-snippet w-full max-w-4xl box-content flex-none">
+                <pre>
+                    <code class="language-javascript">
+                        // jQuery Event Handling
+
+                        $('#myButton').click(function() {
+                            alert('Button Clicked!');
+                        });
+                    </code>
+                </pre>
+            </div>
+
+            <div class="code-snippet w-full max-w-4xl box-content flex-none">
+                <pre>
+                    <code class="language-javascript">
+                        // jQuery DOM Manipulation
+
+                        $('p').addClass('highlight');
+                    </code>
+                </pre>
+            </div>
+
+            <div class="code-snippet w-full max-w-4xl box-content flex-none">
+                <pre>
+                    <code class="language-javascript">
+                        // Handling API Key or Authentication:
+
+                        var apiKey = 'your_api_key';
+                        $.get('https://api.example.com/data?apiKey=' + apiKey, function(data) {
+                            console.log('Data received:', data);
+                        });
+                    </code>
+                </pre>
+            </div>
+
+            <div class="code-snippet w-full max-w-4xl box-content flex-none">
+                <pre>
+                    <code class="language-javascript">
+                        // Handling JSON:
+
+                        $.get('https://api.example.com/data', function(data) {
+                            // Assuming the response is JSON, parse it
+                            var jsonData = JSON.parse(data);
+                            console.log('Parsed JSON:', jsonData);
+                        });
+                    </code>
+                </pre>
+            </div>
+
+            <div class="code-snippet w-full max-w-4xl box-content flex-none">
+                <pre>
+                    <code class="language-javascript">
+
+                        // jQuery AJAX GET request
+
+                        $.get('https://api.example.com/data')
+                        .then(function(data) {
+                            console.log('Data received:', data);
+                        })
+                        .catch(function(error) {
+                            console.error('Error:', error);
+                        });
+                    </code>
+                </pre>
+            </div>
+
+            <div class="code-snippet w-full max-w-4xl box-content flex-none">
+                <pre>
+                    <code class="language-javascript">
+                        // Handling Asynchronous Requests:
+
+                        $.get('https://api.example.com/data')
+                        .then(function(data) {
+                            console.log('Data received:', data);
+                        })
+                        .catch(function(error) {
+                            console.error('Error:', error);
+                        });
+
+                    </code>
+                </pre>
+            </div>
+
+            <div class="code-snippet w-full max-w-4xl box-content flex-none">
+                <pre>
+                    <code class="language-javascript">
+                        // AJAX Events, Handling Before Send and Complete:
+                        $.ajax({
+                            url: 'https://api.example.com/data',
+                            method: 'GET',
+                            beforeSend: function() {
+                                console.log('Request is about to be sent...');
+                            },
+                            complete: function() {
+                                console.log('Request completed!');
+                            },
+                            success: function(data) {
+                                console.log('Data received:', data);
+                            },
+                            error: function(error) {
+                                console.error('Error:', error);
+                            }
+                        });
+                    </code>
+                </pre>
+            </div>
+
+            <!-- Add more code snippets here -->
+        </div>
+    </div>
+    <!--- End Slider with info about jQuery -->
+    
+
     <div id="test">
         <p class="">This is the first content!</p>
     </div>
